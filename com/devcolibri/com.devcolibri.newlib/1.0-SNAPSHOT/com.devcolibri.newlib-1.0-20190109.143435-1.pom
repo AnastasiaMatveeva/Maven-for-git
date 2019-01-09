@@ -7,11 +7,31 @@
     <groupId>com.devcolibri</groupId>
     <artifactId>com.devcolibri.newlib</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <java.version>1.7</java.version>
         <github.global.server>github</github.global.server>
         <github.maven-plugin>0.12</github.maven-plugin>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>Maven-for-git-mvn-repo</id>
+            <url>https://raw.github.com/AnastasiaMatveeva/Maven-for-git/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.devcolibri</groupId>
+            <artifactId>com.devcolibri.newlib</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <distributionManagement>
         <repository>
